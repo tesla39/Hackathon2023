@@ -1,0 +1,12 @@
+#myChart {
+  width: 30px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+/* Add custom styles for the chart canvas */
+#nasaChart {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}

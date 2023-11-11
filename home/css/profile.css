@@ -1,0 +1,33 @@
+body {
+    background-color: #75d332;
+}
+
+#profilePicture {
+    width: 150px;
+    height: 150px;
+}
+
+#username {
+    color: #343a40;
+}
+
+#userDetails {
+    color: #6c757d;
+}
+
+#dataset {
+    color: #6c757d;
+}
+@keyframes dataset-animation {
+    0%   {color: #6c757d; transform: scale(1);}
+    50%  {color: #ff0000; transform: scale(1.1);}
+    100% {color: #6c757d; transform: scale(1);}
+}
+
+#datasetHeader {
+    animation: dataset-animation 2s infinite;
+}
+
+#datasetIcon {
+    animation: dataset-animation 2s infinite;
+}

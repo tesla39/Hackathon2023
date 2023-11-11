@@ -1,0 +1,84 @@
+
+/*header */
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+.logo::after {
+  content: "360";
+  display: inline-block;
+  font-size: 24px;
+  color: #ff3d00;
+  margin-left: 5px;
+  animation: rotate360 8s infinite linear;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.tooltip .tooltip-inner {
+  background-color: #f00; /* Change the background color of the tooltip text, in this case to red (#f00) */
+  color: #fff; /* Change the color of the tooltip text, in this case to white (#fff) */
+  font-size: 16px; /* Change the font size of the tooltip text */
+}
+
+.tooltip.bs-tooltip-top .arrow::before, 
+.tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #f00; /* Change the color of the tooltip arrow, in this case to red (#f00) */
+}
